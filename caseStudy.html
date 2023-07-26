@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="caseStudy.css">
+    
+    <title>Thế giới di động</title>
+</head>
+<body>
+<header>
+    <img src="img/anh.jpg" alt="">
+</header>
+<nav>
+   <div class="container">
+    <ul>
+        <li><a href=""><img style="width: 150px;" src="img/thegioididong.png" alt=""></a></li>
+        <li id="addres-form"><a  href="#" style="color: yellow;">Thừa Thiên Huế<img src="img/arrow1.png" alt=""></a></li>
+        <li><input type="text" id="menu_search" placeholder="Bạn tìm gì..." onkeyup="searchfunc()"> </li>
+        <li><a href=""></a><button><img style="margin-right: 3px;" src="img/user.png">Tài khoản</button></li>
+        <li><a href=""></a><button class="cart-open"><img style="margin-right: 3px;" src="img/cart.png"> Giỏ hàng<span></span></button></li>
+        <li><a href="">Lịch sử <br> đơn hàng</a></li> 
+        <li><a href="">24h Công nghệ</a></li> 
+        <li><a href="">Hỏi đáp</a></li> 
+        <li><a href="">Game App</a></li> 
+        <div class="addres-form" id="addres-form2">
+            <div class="adress-form-content">
+            <h2>Chọn địa chỉ nhận hàng<span id="addres-close"> X Đóng </span></h2>
+            <form action="">
+                <p> Quý khách vui lòng chọn đầy đủ địa chỉ nhận hàng để biết chính xác thời gian giao hàng</p>
+                <select name="" id="">
+                    <option value="">--Chọn tỉnh thành</option>
+                    <option value="">Thừa Thiên Huế</option>
+                </select>
+                <select name="" id="">
+                    <option value="">--Chọn Quận/Huyện</option>
+                    <option value="">Thừa Thiên Huế</option>
+                </select>
+                <select name="" id="">
+                    <option value="">--Chọn Phường/Xã</option>
+                    <option value="">Thừa Thiên Huế</option>
+                </select>
+                <input type="text" placeholder="Số nhà, Tên đường">
+                
+                <button>XÁC NHẬN</button>
+            </form> 
+            
+
+            
+        </div>
+    </div>
+
+    </ul>
+   </div>
+</nav>
+<section class="menu-bar">
+    <div class="container">
+        <div class="menu-bar-content">
+            <ul>
+                <li class="active">
+                    <a href="">
+                            <i>
+                                <img class="icon2" src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn//content/icon-phone-96x96-2.png" alt="Điện thoại">
+                            </i>
+                        <span class="">Điện thoại</span>
+                    </a>
+                </li>
+                <li class="">
+                    <a href="/laptop-ldp">
+                            <i>
+                                <img class="icon2" src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn//content/icon-laptop-96x96-1.png" alt="Laptop">
+                            </i>
+                        <span class="">Laptop</span>
+                    </a>
+                </li>
+                <li class="">
+                    <a href="/may-tinh-bang">
+                            <i>
+                                <img class="icon2" src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn//content/icon-tablet-96x96-1.png" alt="Tablet">
+                            </i>
+                        <span style="color: black;" class="">Tablet</span>
+                    </a>
+                </li>
+                <li class="">
+                    <a href="/phu-kien">
+                        <i>
+                            <img class="icon2" src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn//content/icon-phu-kien-96x96-1.png" alt="Phụ kiện">
+                        </i>
+                    <span class="has-child">Phụ kiện </span> <img style="margin-left: 1px;" src="img/arrow.png" alt="">
+                </a>
+                        <div class="submenu">
+                            <ul>
+                                <li><a href="">Phụ kiện 1</a></li>
+                                <li><a href="">Phụ kiện 2</a></li>
+                                <li><a href="">Phụ kiện 3</a></li>
+                                <li><a href="">Phụ kiện 4</a></li>
+                                <li><a href="">Phụ kiện 5</a></li>
+                            </ul>
+
+                        </div>
+                </li>
+                <li class="">
+                    <a href="/dong-ho-thong-minh-ldp">
+                            <i>
+                                <img class="icon2" src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn//content/icon-smartwatch-96x96-1.png" alt="Smartwatch">
+                            </i>
+                        <span class="">Smartwatch</span><i class="fa-solid fa-sort-down"></i>
+                    </a>
+                </li>
+                <li class="">
+                    <a href="/dong-ho">
+                            <i>
+                                <img class="icon2" src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn//content/watch-icon-96x96.png" alt="Đồng hồ">
+                            </i>
+                        <span class="">Đồng hồ</span>
+                    </a>
+                </li>
+                <li class="">
+                    <a href="">
+                            <i>
+                                <img class="icon2" src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn//content/icon-header-may-cu-30x30.png" alt="Máy cũ giá rẻ">
+                            </i>
+                        <span class="">Máy cũ giá rẻ</span>
+                    </a>
+                </li>
+                <li class="">
+                    <a href="/pc-may-in">
+                        <i>
+                            <img class="icon2" src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn//content/icon-pc-96x96.png" alt="PC, Máy in">
+                        </i>
+                    <span class="has-child">PC, Máy in</span><img style="margin-left: 3px;" src="img/arrow.png" alt="">
+                </a>
+                <div class="submenu">
+                    <ul>
+                        <li><a href="">Máy in 1</a></li>
+                        <li><a href="">Máy in 2</a></li>
+                        <li><a href="">Máy in 3</a></li>
+                        <li><a href="">Máy in 4</a></li>
+                        <li><a href="">Máy in 5</a></li>
+                    </ul>
+
+                </div>
+                </li>
+                <li class="">
+                    <a href="">
+                        <span class="">Sim, Thẻ cào</span>
+                    </a>
+                </li>
+                <li class="">
+                    <a href="/tien-ich/thanh-toan-tra-gop">
+                    <span class="has-child">Dịch vụ tiện ích</span><img style="margin-left: 3px;" src="img/arrow.png" alt="">
+                </a>
+                <div class="submenu">
+                    <ul>
+                        <li><a href="">Tiện ích 1</a></li>
+                        <li><a href="">Tiện ích 2</a></li>
+                        <li><a href="">Tiện ích 3</a></li>
+                        <li><a href="">Tiện ích 4</a></li>
+                        <li><a href="">Tiện ích 5</a></li>
+                    </ul>
+
+                </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+<section class="slider">
+    <div class="container">
+        <div class="slider-content">
+            <div class="slider-content-left">
+                <div class="slider-content-left-top-container">
+                    <div class="slider-content-left-top">
+                        <a href=""><img src="img/slide.a1.jpg" alt=""></a>
+                        <a href=""><img src="img/slide.a2.jpg" alt=""></a>
+                        <a href=""><img src="img/slide.a3.jpg" alt=""></a>
+                        <a href=""><img src="img/slide.a4.jpg" alt=""></a>
+                        <a href=""><img src="img/slide.a5.jpg" alt=""></a>
+                    </div>
+                       <div class="slider-content-left-top-btn">
+                           <img  class="leftbtn" src="img/left.png" alt="">  
+                           <img  class="rightbtn" src="img/right.png" alt="">
+                           
+                           
+                       </div>
+                    </div>
+                
+           
+               <div class="slider-content-left-bottom">
+                <li class="active">Tiêu đề 1</li>
+                <li>Tiêu đề 2</li>
+                <li>Tiêu đề 3</li>
+                <li>Tiêu đề 4</li>
+                <li>Tiêu đề 5</li>
+               </div>
+            </div>
+            <div class="slider-content-right">
+                 <li><a href=""><img src="img/anh1.jpg" alt=""></a></li>
+                <li><a href=""><img src="img/anh2.jpg" alt=""></a></li>
+                <li><a href=""><img src="img/anh3.jpg" alt=""></a></li>
+                <li><a href=""><img src="img/anh4.jpg" alt=""></a></li>
+            </div>
+        </div>
+    </div>
+
+</section>
+<section class="banner1">
+    <div class="container">
+           <img src="img/banner1.jpg.png" alt="">
+    </div>
+</section>
+
+<section class="slider-product1">
+    <div class="container">
+        <div class="slider-product1-content">
+            <div class="slider-product1-content-title">
+                <h2>ĐIỆN THOẠI</h2>
+            </div>
+            <div class="slider-product1-content-iterms" id="sliderproduct">
+           
+            
+                </div>
+            </div>
+        </div>
+
+<section class="product-gallery-one">
+    <div class="container">
+        <div class="product-gallery-one-content">
+            <div class="product-gallery-one-content-title">
+                 <h2>LAPTOP NỔI BẬT NHẤT</h2>
+                 <ul>
+                    <li><a href="">Laptop Dell</a></li>
+                    <li><a href="">Laptop Vivo</a></li>
+                    <li><a href="">Laptop Sumsung</a></li>
+                    <li><a href="">Laptop Vus</a></li>
+                 </ul>
+            </div>
+            <div class="product-gallery-one-content-product" id="sliderproduct2">
+
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="cart">
+    <h2>GIỎ HÀNG<span class="cart-close"> X Đóng </span></h2></h2>
+    <form action="">
+        <table>
+            <thead>
+                <tr>
+                    <th>Sản phẩm</th>
+                    <th>Giá</th>
+                    <th>Số lượng</th>
+                    <th>Chọn</th>
+                </tr>
+            </thead>
+            <tbody>
+               
+            </tbody>
+        </table>
+        <div style="text-align: right;" class="price-total">
+            <p style="font-weight: bold;">Tổng tiền:<span id="priceproduct">0</span><sup>đ</sup></p></p>
+        </div>
+        <button>Chốt đơn</button>
+    </form>
+</section>
+
+<section>
+    <div id="footer">
+        <div class="logo">
+            <img src="img/thegioididong.png" alt="">
+           
+        </div>
+        <div class="content">
+            <h3>NỘI DUNG</h3>
+            <a href="">Trang chủ</a>
+            <a href="">Điện thoại</a>
+            <a href="">Laptop</a>
+        </div>
+        <div class="contact">
+            <h3>LIÊN HỆ</h3>
+            <p>Email: Tuongleba1998@gmail.com</p>
+            <p>Địa chỉ: Thừa Thiên Huế</p>
+            <p>Hotline: 0799.410.862</p>
+        </div>
+    </div>
+</section>
+<script src="caseStudy.js"></script>
+</body>
+</html>
